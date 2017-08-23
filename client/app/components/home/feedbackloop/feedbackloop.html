@@ -1,0 +1,28 @@
+<div>
+  <h2>Business info:</h2>
+  <div>{{vm.item.business_info.business_name}}</div>
+  <div>{{vm.item.business_info.business_address}}</div>
+  <div>{{vm.item.business_info.business_phone}}</div>
+  <div>
+    Total raitings:
+    avg. {{vm.item.business_info.total_rating.total_avg_rating}}
+    total {{vm.item.business_info.total_rating.total_no_of_reviews}}
+  </div>
+  <a ng-href="{{vm.item.business_info.external_url}}">external_url</a>
+  <a ng-href="{{vm.item.business_info.external_page_url}}">external_page_url</a><br>
+
+  <div ng-repeat="review in vm.item.reviews" class="panel panel-default">
+    <div class="panel-body">
+      <div>Custumer: {{review.customer_name}} {{review.customer_last_name}}</div>
+      <div>Date of submission: {{review.date_of_submission}}</div>
+      <div>Description {{review.description}}</div>
+      <div>Rating {{review.rating}}</div>
+    </div>
+  </div>
+
+  <ul class="pager">
+    <li><a class="withripple" ng-click="vm.prev()" href="javascript:void(0)">Previous</a></li>
+    <li><a class="withripple" ng-click="vm.next()" href="javascript:void(0)">Next</a></li>
+  </ul>
+
+</div>

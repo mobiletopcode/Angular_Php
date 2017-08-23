@@ -1,0 +1,5 @@
+.idea/
+node_modules
+client/assets
+server/vendor
+server/composer.phar

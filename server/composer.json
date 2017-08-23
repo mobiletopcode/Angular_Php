@@ -1,0 +1,12 @@
+{
+    "name": "timsmyr/server",
+    "require": {
+        "slim/slim": "^3.4"
+    },
+    "authors": [
+        {
+            "name": "Tim Smyr",
+            "email": "godlyfast@gmail.com"
+        }
+    ]
+}
